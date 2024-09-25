@@ -1,3 +1,4 @@
+/// Define a constant variable named sampleListings
 const sampleListings = [
   {
     _id: {
