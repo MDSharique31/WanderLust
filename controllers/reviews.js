@@ -1,6 +1,8 @@
 const Review = require("../models/review");
 const Listing = require("../models/listing");
 
+
+/// Create a new review and associate it with the listing
 module.exports.createReview = async (req, res) => {
   let listing = await Listing.findById(req.params.id);
   let newReview = new Review(req.body.review);
