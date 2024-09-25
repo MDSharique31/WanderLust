@@ -6,6 +6,7 @@ const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 const mapToken = process.env.MAP_TOKEN;
 const geoCodingClient = mbxGeocoding({ accessToken: mapToken });
 
+
 const mongoUrl = process.env.ATLASDB_URL;
 
 main()
