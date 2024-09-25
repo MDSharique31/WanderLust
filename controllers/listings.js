@@ -3,11 +3,13 @@ const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 const mapToken = process.env.MAP_TOKEN;
 const geoCodingClient = mbxGeocoding({ accessToken: mapToken });
 
+/// Controller for listing all items
 module.exports.index = async (req, res) => {
   let allListings = await Listing.find();
   res.render("./listings/index.ejs", { allListings });
 };
 
+// Render the form to create a new listing
 module.exports.renderNewForm = (req, res) => {
   res.render("listings/new.ejs");
 };
