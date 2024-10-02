@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// Define the schema for a review, which includes comment, rating, creation date, and author reference
 const reviewSchema = new Schema({
   comment: String,
   rating: {
