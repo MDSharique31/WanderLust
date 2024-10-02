@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const passportLocalMongoose = require("passport-local-mongoose");
 
+// Define the schema for a user, which includes email and authentication functionality
 const userSchema = new Schema({
   email: {
     type: String,
