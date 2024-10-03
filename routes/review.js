@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router({ mergeParams: true });
 const wrapAsync = require("../utils/wrapAsync.js");
+//// Route to create a new review
 const {
   validateReview,
   isLoggedIn,
@@ -14,7 +15,7 @@ router.post(
   validateReview,
   wrapAsync(reviewController.createReview)
 );
-
+// Route to delete a specific review by its ID
 router.delete(
   "/:reviewId",
   isLoggedIn,
