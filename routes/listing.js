@@ -7,6 +7,7 @@ const multer = require("multer");
 const { storage } = require("../cloudConfig.js");
 const upload = multer({ storage });
 
+// Route for getting all listings and creating a new listing
 router
   .route("/")
   .get(wrapAsync(listingController.index))
