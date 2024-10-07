@@ -103,6 +103,7 @@ app.all("*", (req, res, next) => {
   next(new ExpressError(404, "Page Not Found!"));
 });
 
+// Global error handling middleware
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "Some Error Occured!" } = err;
   res.status(statusCode).render("./listings/error.ejs", { message });
