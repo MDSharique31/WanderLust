@@ -93,6 +93,7 @@ app.get("/", (req, res) => {
   res.redirect("/listings");
 });
 
+// Use listing, review, and user routers for respective routes
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
