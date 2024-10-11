@@ -9,6 +9,7 @@ cloudinary.config({
   api_secret: process.env.CLOUD_API_SECRET,
 });
 
+// Create a CloudinaryStorage instance to manage file uploads to the specified folder
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
