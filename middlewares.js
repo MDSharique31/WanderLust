@@ -21,6 +21,7 @@ module.exports.saveRedirectUrl = (req, res, next) => {
   next();
 };
 
+// Middleware to check if the logged-in user is the owner of the listing
 module.exports.isOwner = async (req, res, next) => {
   let { id } = req.params;
   let listing = await Listing.findById(id);
