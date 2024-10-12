@@ -44,6 +44,7 @@ module.exports.validateListing = (req, res, next) => {
   }
 };
 
+// Middleware to validate review data using Joi schema
 module.exports.validateReview = (req, res, next) => {
   let { error } = reviewSchema.validate(req.body);
   if (error) {
