@@ -56,6 +56,7 @@ module.exports.validateReview = (req, res, next) => {
   }
 };
 
+// Middleware to check if the logged-in user is the author of a review
 module.exports.isReviewAuthor = async (req, res, next) => {
   let { id, reviewId } = req.params;
   let review = await Review.findById(reviewId);
