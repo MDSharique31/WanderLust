@@ -3,7 +3,7 @@ WanderLust | Holidays Rentals, Cabins, Beach Houses &amp; More
 ### 🌍 WanderLust Project 🏡
 
 #### Project Summary
-**WanderLust** is a comprehensive Full Stack Web Development project designed to facilitate the browsing and booking of vacation accommodations, including houses, villas, and farmhouses. This platform allows users to add their own properties to the listing, providing a diverse range of options for potential renters. Key features include a seamless booking system that simplifies the reservation process and real-time property location views via Mapbox API, to enhance user experience and security. The application also boasts a dynamic server for responsive performance and an intuitive, aesthetically pleasing user interface, ensuring an engaging and efficient user experience.
+**WanderLust** is a comprehensive Full Stack Web Development project aimed at simplifying the browsing and booking of vacation accommodations, including houses, villas, and farmhouses. The platform enables users to list their own properties, offering a diverse selection of options for potential renters. Key features include a seamless booking system to streamline the reservation process, as well as real-time property location views powered by the Mapbox API, enhancing both user experience and security. The application also benefits from a dynamic server for optimized performance and an intuitive, visually appealing user interface, ensuring a smooth and engaging user experience.
 
 #### Front-end 🌐
 - **Technologies Used**: HTML, CSS, JavaScript, Bootstrap, EJS
